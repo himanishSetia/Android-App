@@ -1,10 +1,140 @@
 .bgcolor{
-	background-color: #3b95bf;
+	background-color: #917fae;
 }
 
 
 .ionicTitle{
 	font-family: 'Berlin Sans FB';
 	text-align: center;
-	color: #3b95bf;
+	color: #2e89b4;
+}
+
+.berlin{
+	font-family: 'Berlin Sans FB'
+}
+
+.txtCenter{
+	text-align: center;
+}
+
+
+.loginImage{
+	background: url('../img/pinkDust.png'); 
+}
+
+.opac{
+	opacity: 0.9;
+}
+
+
+.username{
+
+	border-radius: 10px;
+}
+
+.passcode{
+	border-radius: 10px;
+}
+
+.mrtp20{
+	margin-top: 20px;
+}
+
+.pdlf30{
+	padding-left: 30px;
+}
+
+.pdtp100{
+	padding-top: 100px;
+}
+
+
+.usernameAnim{
+	-webkit-animation:usernameAnimation 0.5s 1;
+}
+
+.passwordAnim{
+	-webkit-animation:passwordAnimation 0.5s 1;
+}
+
+.submitAnim{
+	-webkit-animation:submitAnimation 0.5s 1;
+}
+
+/*.iconAnim{
+	-webkit-animation:iconAnimation 0.5s 1;
+}*/
+
+/*@keyframes usernameAnimation{
+	0%{margin-left: -216;}
+	10%{margin-left: -195;}
+	20%{margin-left: -174;}
+	30%{margin-left: -153;}
+	40%{margin-left: -132;}
+	50%{margin-left: -111;}
+	60%{margin-left: -90;}
+	70%{margin-left: -69;}
+	80%{margin-left: -48;}
+	90%{margin-left: -27;}
+	100%{margin-left: 0;}
+}*/
+
+@keyframes usernameAnimation{
+	0%{margin-left: -216;}
+	10%{margin-left: -195;}
+	20%{margin-left: -174;}
+	30%{margin-left: -153;}
+	40%{margin-left: -132;}
+	50%{margin-left: -111;}
+	60%{margin-left: -90;}
+	70%{margin-left: -69;}
+	80%{margin-left: -48;}
+	90%{margin-left: -27;}
+	100%{margin-left: 0;}
+}
+
+@keyframes passwordAnimation{
+	0%{margin-left: 216;}
+	10%{margin-left: 195;}
+	20%{margin-left: 174;}
+	30%{margin-left: 153;}
+	40%{margin-left: 132;}
+	50%{margin-left: 111;}
+	60%{margin-left: 90;}
+	70%{margin-left: 69;}
+	80%{margin-left: 48;}
+	90%{margin-left: 27;}
+	100%{margin-left: 0;}
+}
+
+@keyframes submitAnimation{
+	0%{margin-left: -216;}
+	10%{margin-left: -195;}
+	20%{margin-left: -174;}
+	30%{margin-left: -153;}
+	40%{margin-left: -132;}
+	50%{margin-left: -111;}
+	60%{margin-left: -90;}
+	70%{margin-left: -69;}
+	80%{margin-left: -48;}
+	90%{margin-left: -27;}
+	100%{margin-left: 0;}
+}
+
+
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
 }

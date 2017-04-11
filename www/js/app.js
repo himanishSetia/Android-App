@@ -30,8 +30,8 @@ var firstApp = angular.module('firstApp', ['ionic','ngRoute']);
 
 
 firstApp.config(function($stateProvider,$urlRouterProvider){
-  $urlRouterProvider.otherwise('/side/home')
-
+  $urlRouterProvider.otherwise('/login')
+  // $urlRouterProvider.otherwise('/side/home')
   $stateProvider
   .state('sidemenu',{
     url:"/side",
@@ -39,11 +39,37 @@ firstApp.config(function($stateProvider,$urlRouterProvider){
     templateUrl:"templates/side-menu.html"
   })
 
+  .state('login',{
+    url:"/login",
+    controller:'loginController',
+    templateUrl:"templates/loginPage.html"
+  })
+
   .state('sidemenu.home',{
     url:'/home',
     views:{
       'menuContent':{
         templateUrl:"templates/home.html"
+      }
+    }
+  })
+
+  .state('sidemenu.nav',{
+    url:'/map',
+    views:{
+      'menuContent':{
+        controller:'mapCtrl',
+        templateUrl:"templates/map.html"
+      }
+    }
+  })
+
+    .state('sidemenu.support',{
+    url:'/support',
+    views:{
+      'menuContent':{
+        // controller:'mapCtrl',
+        templateUrl:"templates/support.html"
       }
     }
   })
